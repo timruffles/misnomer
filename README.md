@@ -7,9 +7,11 @@ Given a module a bad name? Used all over your codebase and tests? Sounds like yo
 ```sh
 $ rename-module /src/some-bad-name.js some-good-name.js src/**/*.js test/**/*.js
 Renaming:
-- src/foo/bar.js 2 occurrences
-- src/foo/qux.js 1 occurrence
-- test/foo/bar.js 1 occurrence
+- moved src/some-bad-name.js to /src/some-good-name.js
+- src/foo/bar.js fixed 2 require()s
+- src/foo/qux.js fixed 3 require()s
+- test/foo/bar.js fixed 1 require()
+- moved test/unit/some-bad-name-test.js to test/unit/some-good-name.js
 ```
 
 and magically, where you saw:
