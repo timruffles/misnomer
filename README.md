@@ -1,5 +1,7 @@
 # cjs-rename
 
+## This module doesn't exist - should it? Is there another out there already?
+
 Given a module a bad name? Used all over your codebase and tests? Sounds like you want to rename a CJS module, and this here module can do that for you:
 
 ```sh
@@ -26,4 +28,3 @@ require("../../src/some-good-name.js");
 
 Woohoo!
 
-## This module doesn't exist - should it? Is there another out there already?
