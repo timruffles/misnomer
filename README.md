@@ -11,20 +11,20 @@ Renaming:
 - src/foo/bar.js fixed 2 require()s
 - src/foo/qux.js fixed 3 require()s
 - test/foo/bar.js fixed 1 require()
-- moved test/unit/some-bad-name-test.js to test/unit/some-good-name.js
+- moved test/unit/some-bad-name-test.js to test/unit/some-good-name-test.js
 ```
 
 and magically, where you saw:
 
 ```javascript
-// test/unit/some-bad-name.js
+// test/unit/some-bad-name-test.js
 require("../../src/some-bad-name.js");
 ```
 
 you'll now find
 
 ```javascript
-// test/unit/some-good-name.js
+// test/unit/some-good-name-test.js
 require("../../src/some-good-name.js");
 ```
 
